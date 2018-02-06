@@ -1,0 +1,81 @@
+/* Set height to 100% for body and html to enable the background image to cover the whole page: */
+body, html {
+   height: 100%
+}
+
+.bgimg {
+   /* Full-screen */
+   height: 100%;
+   /* Center the background image */
+   background-position: center;
+   /* Scale and zoom in the image */
+   background-size: cover;
+   /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+   position: relative;
+   /* Add a white text color to all elements inside the #bgimg container */
+   color: black;
+   /* Add a font */
+   font-family: "Courier New", Courier, monospace;
+   /* Set the font-size to 25 pixels */
+   font-size: 25px;
+}
+
+
+/* Position text in the middle */
+.middle {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+}
+
+/* Style the <hr> element */
+hr {
+   margin: auto;
+   width: 40%;
+}
+
+#cookie {
+  margin-bottom: 25px;
+}
+
+#cookie img {
+  display: none;
+}
+
+#cookie > img#no-bite {
+  display: block;
+}
+
+#cookie.first-bite > img#no-bite {
+  display: none !important;
+}
+
+#cookie.first-bite > img#first-bite {
+  display: block;
+}
+
+#cookie.first-bite.second-bite > img#first-bite {
+  display: none !important;
+}
+
+#cookie.second-bite > img#second-bite {
+  display: block;
+}
+
+#cookie.second-bite.third-bite > img#second-bite {
+  display: none !important;
+}
+
+#cookie.third-bite > img#third-bite {
+  display: block;
+}
+
+#cookie.third-bite.fourth-bite > img#third-bite {
+  display: none !important;
+}
+
+#cookie.fourth-bite > img#fourth-bite {
+  display: block;
+}
